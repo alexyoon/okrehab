@@ -387,7 +387,7 @@ footer .fl{display:flex;gap:20px;margin-bottom:14px;color:#fff;font-weight:500}
     const ex=x+d*(sp*(.45+Math.random()*.55)),ey=y+30+Math.random()*50;
     branches.push({x0:x+d*w*.5,y0:y,cx:x+d*sp*.25,cy:y-18,ex,ey,pain:Math.random()<.35,ph:Math.random()*6});
    });
-  });
+  }
   for(let i=0;i<46;i++)pulses.push({b:(Math.random()*branches.length)|0,t:Math.random(),v:.004+Math.random()*.008});
  }
  function bz(b,t){const u=1-t;return[u*u*b.x0+2*u*t*b.cx+t*t*b.ex,u*u*b.y0+2*u*t*b.cy+t*t*b.ey]}
